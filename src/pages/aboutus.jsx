@@ -15,6 +15,10 @@ import wipro from "../assets/wipro.png";
 import johnson from "../assets/johnson.png";
 import merino from "../assets/merino.png";
 import founder from "../assets/founder.png";
+import greenlam from "../assets/greenlam.png"; // Placeholder for Greenlam
+import greenply from "../assets/greenply.png"; // Placeholder for Greenply
+ import astuninply from "../assets/astuninply.png"; // Placeholder for Astuninply
+ import ebco from "../assets/ebco.png"; // Placeholder for Ebco
 
 
 const AboutUs = () => {
@@ -500,41 +504,7 @@ const AboutUs = () => {
 
           {/* Partners Grid */}
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 lg:gap-12 items-center justify-items-center">
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={asianpaints} 
-                alt="Asian Paints" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={kajaria} 
-                alt="Kajaria" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={mytyles} 
-                alt="MyTyles" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={quartizo} 
-                alt="Quartizo" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={simens} 
-                alt="Siemens" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
+            {/* 1. Centuryply */}
             <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
               <img 
                 src={centuryply} 
@@ -543,30 +513,7 @@ const AboutUs = () => {
               />
             </div>
 
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={philips} 
-                alt="philips" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={crompton} 
-                alt="crompton" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={godrej} 
-                alt="godrej" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-
+            {/* 2. Hettich */}
             <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
               <img 
                 src={hettich} 
@@ -575,6 +522,7 @@ const AboutUs = () => {
               />
             </div>
 
+            {/* 3. Saint-Gobain */}
             <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
               <img 
                 src={saintgobain} 
@@ -583,30 +531,7 @@ const AboutUs = () => {
               />
             </div>
 
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={dulux} 
-                alt="dulux" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={wipro} 
-                alt="wipro" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-
-            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
-              <img 
-                src={johnson} 
-                alt="johnson" 
-                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
-              />
-            </div>
-
+            {/* 4. Merino */}
             <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
               <img 
                 src={merino} 
@@ -614,6 +539,58 @@ const AboutUs = () => {
                 className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
               />
             </div>
+
+            {/* 5. Greenlam - Placeholder */}
+            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
+              <img src={greenlam} alt="Greenlam" className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"/>
+              {/* <span className="text-sm text-gray-500">Greenlam</span> */}
+            </div>
+
+            {/* 6. Greenply - Placeholder */}
+            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
+              <img src={greenply} alt="Greenply" className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"/>
+              {/* <span className="text-sm text-gray-500">Greenply</span> */}
+            </div>
+
+            {/* 7. Philips */}
+            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
+              <img 
+                src={philips} 
+                alt="philips" 
+                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+
+            {/* 8. Crompton */}
+            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
+              <img 
+                src={crompton} 
+                alt="crompton" 
+                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+
+            {/* 9. Asian Paints */}
+            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
+              <img 
+                src={asianpaints} 
+                alt="Asian Paints" 
+                className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              />
+            </div>
+
+            {/* 10. Astuninply - Placeholder */}
+            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
+              <img src={astuninply} alt="Astuninply" className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"/>
+              {/* <span className="text-sm text-gray-500">Astuninply</span> */}
+            </div>
+
+            {/* 11. Ebco - Placeholder */}
+            <div className="flex items-center justify-center w-full max-w-48 h-24 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 px-6 group">
+              <img src={ebco} alt="Ebco" className="max-h-16 w-auto object-contain transition-transform duration-300 group-hover:scale-105"/>
+              {/* <span className="text-sm text-gray-500">Ebco</span> */}
+            </div>
+
           </div>
         </div>
       </div>
