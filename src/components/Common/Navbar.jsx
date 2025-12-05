@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import ddglogo from "./ddglogo.png";
+import ddglogo from "./logo.png";
 import { Link, useLocation } from "react-router-dom";
 
 // A better icon: a modern chat bubble SVG
