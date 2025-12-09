@@ -108,56 +108,58 @@ const Navbar = ({ isShrunk = false }) => {
           }}
         >
           <div className="navbar-logo">
-            <span>
-              <img
-                src={ddglogo}
-                alt="Logo"
-                className="navbar-logo-img"
-                style={{
-                  width: isShrunk ? "70px" : "96px",
-                  height: "auto",
-                  marginRight: "0px",
-                  
-                  position: "relative",
-                  zIndex: 1001,
-                  maxHeight: isShrunk ? "50px" : "78px",
-                  objectFit: "contain",
-                  transition: "width 0.2s, max-height 0.2s",
-                }}
-              />
-              <span
-                className="logo-text"
-                style={{
-                  fontSize: isShrunk ? "1rem" : "1.25rem",
-                  color: "#000000",
-                  marginLeft: "10px",
-                  whiteSpace: "pre-line",
-                  transition: "font-size 0.2s",
-                  fontFamily: "'Montserrat', 'Arial', 'Helvetica Neue', Arial, sans-serif",
-                  lineHeight: 1.1,
-                  display: "inline-block",
-                  fontWeight: 400,
-                  letterSpacing: "0.5px",
-                  WebkitFontSmoothing: "antialiased",
-                  MozOsxFontSmoothing: "grayscale",
-                  textRendering: "geometricPrecision",
-                  background: "none",
-                  textShadow: "none",
-                  filter: "none",
-                  // Remove all possible rendering artifacts
-                  // No border, no outline, no boxShadow
-                  border: "none",
-                  outline: "none",
-                  boxShadow: "none",
-                  // Force hardware acceleration off
-                  willChange: "auto",
-                }}
-              >
-                DESIGN & 
-                <br />
-                DÉCOR GUIDE
+            <Link to="/" onClick={handleNavLinkClick}>
+              <span>
+                <img
+                  src={ddglogo}
+                  alt="Logo"
+                  className="navbar-logo-img"
+                  style={{
+                    width: isShrunk ? "70px" : "96px",
+                    height: "auto",
+                    marginRight: "0px",
+                    
+                    position: "relative",
+                    zIndex: 1001,
+                    maxHeight: isShrunk ? "50px" : "78px",
+                    objectFit: "contain",
+                    transition: "width 0.2s, max-height 0.2s",
+                  }}
+                />
+                <span
+                  className="logo-text"
+                  style={{
+                    fontSize: isShrunk ? "1rem" : "1.25rem",
+                    color: "#000000",
+                    marginLeft: "10px",
+                    whiteSpace: "pre-line",
+                    transition: "font-size 0.2s",
+                    fontFamily: "'Montserrat', 'Arial', 'Helvetica Neue', Arial, sans-serif",
+                    lineHeight: 1.1,
+                    display: "inline-block",
+                    fontWeight: 400,
+                    letterSpacing: "0.5px",
+                    WebkitFontSmoothing: "antialiased",
+                    MozOsxFontSmoothing: "grayscale",
+                    textRendering: "geometricPrecision",
+                    background: "none",
+                    textShadow: "none",
+                    filter: "none",
+                    // Remove all possible rendering artifacts
+                    // No border, no outline, no boxShadow
+                    border: "none",
+                    outline: "none",
+                    boxShadow: "none",
+                    // Force hardware acceleration off
+                    willChange: "auto",
+                  }}
+                >
+                  DESIGN & 
+                  <br />
+                  DÉCOR GUIDE
+                </span>
               </span>
-            </span>
+            </Link>
           </div>
           <div
             className={`navbar-menu${menuOpen ? " active" : ""}`}
@@ -388,12 +390,12 @@ const Navbar = ({ isShrunk = false }) => {
         .button-lets-talk:hover, .button-lets-talk:focus {
           background: #8B0000;
           color: #FFFFFF !important;
-          box-shadow: 0 4px 12px 0 rgba(0,0,0,0.12);
-          transform: translateY(-1px);
-          text-shadow: none;
+          box-shadow: 0 4px 12px 0 rgba(0,0,0,0.12); // subtle lift
+          transform: translateY(-1px);              // subtle lift
+          text-shadow: none;                         // remove any text shadow on hover
         }
         .button-lets-talk:active {
-          transform: scale(0.98);
+          transform: scale(0.98);                    // subtle click effect
         }
 
         /* Chat bubble icon style */
@@ -416,7 +418,7 @@ const Navbar = ({ isShrunk = false }) => {
         .navbar-menu a:hover,
         .navbar-menu a:focus {
           color: rgb(200,62,62);
-          background: none;
+          background: none; /* Ensure no background changes on hover/focus */
         }
         .navbar-menu a.active { color: rgb(200,62,62); }
 
